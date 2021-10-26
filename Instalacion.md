@@ -1,9 +1,12 @@
-Aljavier: https://gist.github.com/aljavier/9c06356f4647b56ab3238d66219be6fa
-S4vitar: https://pastebin.com/EEX1Dsuq
-
 # Denigrante Hax0r GUI
+---
 
+![Example](img/yukoparroto.png)
+
+---
 ## Vamos a hacer una guia de como instalar y personalizar nuestro escritorio con bspwm
+
+
 
 Esta guia se realiza a 24 de octubre de 2021, es posible que en el momento que estes leyendo esto las dependencias esten cambiando.
 
@@ -214,3 +217,9 @@ Y por ultimo agregamos el elemento al launch:
 ```bash
 polybar ip -c ~/.config/polybar/current.ini
 ```
+
+
+
+##### Creds
++ Aljavier: https://gist.github.com/aljavier/9c06356f4647b56ab3238d66219be6fa
++ S4vitar: https://pastebin.com/EEX1Dsuq
