@@ -1,0 +1,37 @@
+#!/bin/sh
+
+#Autostart
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#feh --bg-fill /home/yuki/Imágenes/wall.gif &
+#sxiv -f -A 5 -b -q ~/Imágenes/wall.gif &
+#xwinwrap -ov -g 1920x1080+0+0 -ni -s -nf -b -un -argb -sh circle -- gifview -w WID ~/Imágenes/wall.gif -a
+#/home/yuki/.config/bin/./b4ck.sh 0.010 /home/yuki/Imágenes/wall.gif &
+killall wall.py
+~/.config/bin/./wall.py /home/yuki/Imágenes/wall.gif &
+
+/home/yuki/.config/polybar/./launch.sh &
+
+
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         0
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+picom --experimental-backends &
+
+#Si estas en maquina virtual para poder hacer copypaste
+vmware-user-suid-wrapper
+
