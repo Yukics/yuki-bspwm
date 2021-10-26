@@ -218,7 +218,9 @@ Y por ultimo agregamos el elemento al launch:
 polybar ip -c ~/.config/polybar/current.ini
 ```
 
+#### A tener en cuenta
 
+Casi seguro que no vereis los mismos iconos que yo. Debeis configurar las fuentes que querais y editar los paramtros en consonancia.
 
 ##### Creds
 + Aljavier: https://gist.github.com/aljavier/9c06356f4647b56ab3238d66219be6fa
